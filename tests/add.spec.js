@@ -1,4 +1,4 @@
-const {test}=require('@playwright/test')
+const {test,expect}=require('@playwright/test')
 
 test.only('add test ', async ({page}) => {
 
