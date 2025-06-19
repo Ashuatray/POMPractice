@@ -7,16 +7,18 @@ test('add test ', async ({page}) => {
     let c = a + b;
 
     expect(c).toBe(a+b);
+    console.log(`the sum of two digit is : ${c}`)
     
     
 })
-test('add test ', async ({page}) => {
+test('subtract ', async ({page}) => {
 
     let a = 20;
     let b = 10;
-    let c = a + b;
+    let c = a - b;
 
-    expect(c).toBe(a+b);
+    expect(c).toBe(a-b);
+    console.log(`the subtracrion of value is : ${c}`);
     
     
 })
