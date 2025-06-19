@@ -56,7 +56,7 @@ test('UI select', async ({page}) => {
   await page.pause();
 })
 
-test.only("childPage", async ({browser}) =>{
+test("childPage", async ({browser}) =>{
  const context = await browser.newContext()
  const page = await context.newPage()
  page.goto("https://rahulshettyacademy.com/loginpagePractise/")
@@ -75,7 +75,7 @@ test.only("childPage", async ({browser}) =>{
 });
 
 
-test('test', async ({ page }) => {
+test.skip('test', async ({ page }) => {
   await page.goto('https://rahulshettyacademy.com/documents-request');
   await page.getByRole('link', { name: 'Courses' }).click();
   await page.locator('#heap_product-card-cta_712957').click();

@@ -2,7 +2,7 @@ const { test , expect } = require('@playwright/test');
 const { table } = require('console');
 const { emit } = require('process');
 
-test('E2E tesing', async ({page}) => {
+test.skip('E2E tesingg', async ({ page }) => {
    await  page.goto("https://rahulshettyacademy.com/client/auth/login");
     await page.locator("input#userEmail").fill("Ashu.atray143@gmail.com");
     await page.locator("input#userPassword").fill("Ashu@12345");

@@ -7,9 +7,9 @@ test('Unique Locatoras', async({page}) => {
     await page.getByLabel("Employed").click()
     await page.locator("input[name='name']:nth-child(1)").fill("Ashutosh sharma")
     await page.locator("input[name='name']:nth-child(1)").fill("Ashu.atray143@gmail.com")
-    await page.getByPlaceholder("Passeword").fill("Ashu@1234")
-    await page.getByLabel("Check me out if you Love IceCreams!").click()
-    await page.getByLabe("Gender").selectOption("Male")
+    await page.locator("#exampleInputPassword1").fill("Ashu@1234");
+    await page.getByLabel("Check me out if you Love IceCreams!").click();
+    await page.getByLabel("Gender").selectText("Male");
 
     
 
@@ -63,7 +63,7 @@ test('handle dialogs/popups', async({page}) => {
     await page.locator("#confirmbtn").click();
 
 })
-test.only('hover ', async({page}) => {
+test('hover ', async({page}) => {
 
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     await page.locator("#mousehover").hover();
