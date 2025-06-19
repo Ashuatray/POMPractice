@@ -2,7 +2,7 @@ const { test , expect } = require('@playwright/test');
 const { table } = require('console');
 const { emit } = require('process');
 
-test.skip('E2E tesing', async ({page}) => {
+test('E2E tesing', async ({page}) => {
    await  page.goto("https://rahulshettyacademy.com/client/auth/login");
     await page.locator("input#userEmail").fill("Ashu.atray143@gmail.com");
     await page.locator("input#userPassword").fill("Ashu@12345");
@@ -13,7 +13,7 @@ test.skip('E2E tesing', async ({page}) => {
 })
 //const { test, expect } = require('@playwright/test');
 
-test.only('E2E testing', async ({ page }) => {
+test('E2E testing', async ({ page }) => {
     const email = "Ashu.atray143@gmail.com";
     const productName = "ADIDAS ORIGINAL";
     const pswd =  "Ashu@12345";
