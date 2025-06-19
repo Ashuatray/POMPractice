@@ -3,7 +3,7 @@
  const data = JSON.parse(JSON.stringify(require('../utils/POdata.json')));
 
 
- test.skip('Client App login', async ({page})=>
+ test('Client App login', async ({page})=>
  {
    const poManager = new POManager(page);
     //js file- Login js, DashboardPage

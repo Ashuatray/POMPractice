@@ -13,7 +13,7 @@ test.skip('E2E tesing', async ({page}) => {
 })
 //const { test, expect } = require('@playwright/test');
 
-test.skip('E2E testing', async ({ page }) => {
+test.only('E2E testing', async ({ page }) => {
     const email = "Ashu.atray143@gmail.com";
     const productName = "ADIDAS ORIGINAL";
     const pswd =  "Ashu@12345";

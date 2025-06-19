@@ -13,7 +13,7 @@ const config = defineConfig({
   use: {
     browserName: 'chromium',
     screenshot:'on',
-    trace : 'on'
+    trace : 'off'
   },
   reporter: 'html',
 

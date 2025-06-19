@@ -9,8 +9,19 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.53.1",
     "@types/node": "^22.15.29",
     "playwright-html-reporter": "^0.1.11"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashuatray/POMPractice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ashuatray/POMPractice/issues"
+  },
+  "homepage": "https://github.com/Ashuatray/POMPractice#readme"
 }
